@@ -4,7 +4,7 @@
 Student1.iml
 doc/
 pom.xml
-src/
+resources/
 target/
 upload.bat
 codingdojo-1.10.105.jar
