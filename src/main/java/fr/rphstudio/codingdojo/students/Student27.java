@@ -30,15 +30,31 @@ public class Student27 extends PodPlugIn {
     {   
         //-------------------------------------------------------
         // WRITE YOUR OWN CODE HERE
+
         
         setPlayerName("Student 27");
         selectShip(1);
         setPlayerColor(255,255,255,255);
 
-        moveToNextCheckPoint(0.5f);
+
+        if(getNextCheckPointDistance()<3){
+            incSpeed(-0.8f);
+            turnTowardPosition(getSecondCheckPointX(),getSecondCheckPointY());
+        }else
+            {
+            turnTowardNextCheckPoint();
+            incSpeed(1.0f);
+        }
+
+
+
+
+
+
 
         // END OF CODE AREA
         //-------------------------------------------------------
+
     }
     
 }
