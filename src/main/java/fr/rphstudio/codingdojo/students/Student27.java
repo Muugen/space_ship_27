@@ -46,6 +46,10 @@ public class Student27 extends PodPlugIn {
             incSpeed(1.0f);
         }
 
+        if(getShipBoostLevel()== 100){
+            useBoost();
+        }
+
 
 
 
